@@ -1,27 +1,35 @@
-package assignements.week1;
-
-
+package javapractice.assignments;
 
 public class Palindrome {
 
 	public static void main(String[] args) {
-		// Palindrome 
+		// TODO Auto-generated method stub
 		
-		String str1="madam";
+		String str1="A man, a plan, a canal: Panama";
+		
+		//Removing the non alphanumeric characters
+		str1=str1.replaceAll("[^a-zA-Z0-9]", "");
+		
+		//Converting the uppercases to lowercase
+		str1=str1.toLowerCase();
+		
+		//Initializing for the checking the reversed string
 		String rev="";
+		
+		//Reversing a String
 		for ( int i=str1.length()-1;i>=0;i--)
 		{
 		rev=rev+str1.charAt(i);
-		//System.out.println(rev);
 		}
 		if(str1.equals(rev))
 		{
-			System.out.println("Palindrome");
+			System.out.println("The given string is Palindrome");
 		}
 		else
 		{
-			System.out.println("Not Palindrome");
+			System.out.println("The given string is Not Palindrome");
 		}
+
 	}
 
 }
