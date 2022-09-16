@@ -3,7 +3,7 @@ package javapractice.assignments;
 public class Palindrome {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Java challenge Exercise 3
 		
 		String str1="A man, a plan, a canal: Panama";
 		
